@@ -52,7 +52,7 @@ public class ApplicationDetail extends Activity {
         this.context = this;
         Intent thisIntent = getIntent();
         String applicationId = Long.toString(thisIntent.getExtras().getLong("applicationId"));
-        Log.i("iver", "XXXXX" + applicationId);
+
 
        // R�cup�ration des donn�es
         Cursor data = Tools.database.database.query("application", new String[]{"label", "name", "version_code", "version_name", "system"}, "id = ?", new String[]{applicationId}, null, null, null);
@@ -60,6 +60,7 @@ public class ApplicationDetail extends Activity {
             data.moveToFirst();
 
           packageName = data.getString(1);
+
 
             // Affichage du nom de l'application, du package et de la version
             ((TextView)findViewById(R.id.application_detail_label)).setText(data.getString(0));

@@ -64,7 +64,7 @@ public class FirstTab extends ExpandableListActivity implements Runnable {
     protected void onCreate(android.os.Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPm = getPackageManager();
-        Log.i("iver", "XXXXX1" +mPm);
+
         mDangerousColor = getResources().getColor(R.color.perms_dangerous_grp_color);
         mGroupData = new ArrayList<Map<String, String>>();
         mChildData = new ArrayList<List<Map<String, String>>>();
