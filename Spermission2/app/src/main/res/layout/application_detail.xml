@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <include layout="@layout/title_bar" />
+  <RelativeLayout android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:orientation="horizontal">
+	  <ImageButton android:id="@+id/application_detail_manage_button"
+	  		  	android:layout_width="wrap_content"
+	  		  	android:layout_height="wrap_content"
+	  		  	android:background="@null"
+	  		  	android:layout_alignParentRight="true" />
+	  <TextView android:id="@+id/application_detail_label"
+
+	  			android:layout_width="wrap_content"
+	  			android:layout_toLeftOf="@id/application_detail_manage_button"
+	  			android:gravity="left"
+	  			android:layout_alignParentLeft="true"
+		  android:layout_height="wrap_content" />
+  </RelativeLayout>
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+	  <TextView
+	      		android:layout_width="wrap_content"
+	      		android:text="@string/application_detail_package"
+		  android:layout_height="wrap_content" />
+	  <TextView
+	      		android:id="@+id/application_detail_system"
+	      		android:layout_width="wrap_content"
+	      		android:textColor="#FF0000"
+	      		android:text="@string/application_detail_system"
+		  android:layout_height="wrap_content" />
+  </LinearLayout>
+  <TextView android:id="@+id/application_detail_name"
+
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content" />
+  <TextView
+      		android:text="@string/application_detail_version"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content" />
+  <TextView android:id="@+id/application_detail_version"
+
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content" />
+  <TextView
+      		android:text="@string/application_detail_permission_count"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content" />
+  <TextView android:id="@+id/application_detail_permission_count"
+
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content" />
+  <TextView
+  			android:text="@string/application_detail_permission_used"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content" />
+  <ListView android:id="@+id/application_detail_permission_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+</LinearLayout>

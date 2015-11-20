@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <CheckBoxPreference android:title="@string/preference_application_name_title" 
+  					  android:key="application_name"
+					  android:summaryOn="@string/preference_application_name_true"
+					  android:summaryOff="@string/preference_application_name_false"
+					  android:defaultValue="true" />
+  <CheckBoxPreference android:title="@string/preference_application_order_title" 
+  					  android:key="application_order"
+					  android:summaryOn="@string/preference_application_order_true"
+					  android:summaryOff="@string/preference_application_order_false"
+					  android:defaultValue="false" />
+  <CheckBoxPreference android:title="@string/preference_application_hide_system_app_title" 
+  					  android:key="hide_system_app"
+					  android:summaryOn="@string/preference_application_hide_system_app_true"
+					  android:summaryOff="@string/preference_application_hide_system_app_false"
+					  android:defaultValue="false" />
+  <CheckBoxPreference android:title="@string/preference_permission_order_title" 
+  					  android:key="permission_order"
+					  android:summaryOn="@string/preference_permission_order_true"
+					  android:summaryOff="@string/preference_permission_order_false"
+					  android:defaultValue="false" />
+  <CheckBoxPreference android:title="@string/preference_category_order_title" 
+  					  android:key="category_order"
+					  android:summaryOn="@string/preference_category_order_true"
+					  android:summaryOff="@string/preference_category_order_false"
+					  android:defaultValue="false" />
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="perms_dangerous_grp_color">#dd6826</color>
+    <color name="background_dark">#222222</color>
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_tab">#333333</color>
+    <color name="text_dark">#2D2D2D</color>
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_tab">#999999</color>
+    <color name="text_tab_selected">#FFFFFF</color>
+
+
+</resources>
